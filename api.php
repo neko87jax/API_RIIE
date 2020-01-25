@@ -25,7 +25,6 @@ $closeJudul = explode('"></a>',$getJudul[1]);
 // mengambil link untuk di grabbing
 $getLink = explode('<a href="',$getJudul[1]);
 $closeLink = explode('"',$getLink[1]);
-// echo $closeLink[0]."<br>";
 
 // mengambil gambar 
 $getImage = explode('src="',$getJudul[2]);
@@ -36,7 +35,6 @@ $data = [
     "image" => "$closeImage[0]",
     "link" => "$closeLink[0]",
 ];
-// var_dump($array);
 
 $array[] = $data;
 }
@@ -44,6 +42,5 @@ $api = json_encode($array);
 
 $dataApi = json_decode($api, true);
 
-// echo $closelinkMovie[0];
 
 ?>
