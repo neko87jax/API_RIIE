@@ -35,11 +35,8 @@ if(isset($_GET['id'])){
 <div class="row">
     
         <?php
-    // var_dump($dataApi);
-    // echo $dataApi[$key]["judul"]."<br>";
-    // echo $dataApi[$key]["link"]."<br>";
     foreach($dataApi as $key => $value):?>
-     <div class="col-3 my-2">
+     <div class="col-lg-3 col-sm-12 col-md-6 my-2">
         <div class="card" style="width: 15rem;">
         <img src="<?=$dataApi[$key]["image"]  ?>" class="card-img-top" alt="<?= $dataApi[$key]["judul"] ?>">
             <div class="card-body">
