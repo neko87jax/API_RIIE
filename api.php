@@ -39,7 +39,6 @@ $data = [
 $array[] = $data;
 }
 $api = json_encode($array);
-echo $api;
 $dataApi = json_decode($api, true);
 
 
