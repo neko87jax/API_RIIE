@@ -1,7 +1,7 @@
 <?php
 /**
 *Created by raflidev
-*Meownime ongoing update
+*riie ongoing update
 **/
 function grabbing($url){
     $data = curl_init();
@@ -39,7 +39,7 @@ $data = [
 $array[] = $data;
 }
 $api = json_encode($array);
-
+echo $api;
 $dataApi = json_decode($api, true);
 
 
